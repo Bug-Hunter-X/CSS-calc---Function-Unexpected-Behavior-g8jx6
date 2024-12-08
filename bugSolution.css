@@ -1,0 +1,20 @@
+/* bugSolution.css */
+#myElement {
+  width: calc(50% - 10px);
+}
+
+/*Avoid nesting calc() unless absolutely necessary. If nesting is unavoidable, add comments to improve readability */
+#anotherElement {
+  width: calc(100px + calc(50% - 20px)); /*Avoid this type of nesting if possible */
+}
+
+/*Use variables to improve maintainability and readability of complex calc() expressions*/
+:root {
+  --element-width: 100px;
+  --element-margin: 20px;
+}
+#anotherElement2 {
+  width: calc(var(--element-width) + var(--element-margin));
+}
+
+/* Always specify units. */
