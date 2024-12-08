@@ -1,0 +1,1 @@
+This repository demonstrates a common issue with the CSS `calc()` function: unexpected results caused by inconsistencies in units or overly complex nesting.  The `bug.css` file shows the problematic code, while `bugSolution.css` provides a corrected version.  Always double-check your units and try to keep `calc()` expressions simple and readable for maintainability.
